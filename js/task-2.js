@@ -1,11 +1,12 @@
 function makeArray(firstArray, secondArray, maxLength) {
+  const sumArr = firstArray.concat(secondArray);
   const newArr = [];
-  for (let i = 0; i < array.length; i++) {
-    const element = firstArray[i];
-    newArr.push(element);
-  }
-  console.log(newArr);
 
+  for (let i = 0; i < maxLength; i++) {
+    const elem = sumArr[i];
+    newArr.push(elem);
+  }
+  return newArr;
 }
 
 
