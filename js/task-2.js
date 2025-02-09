@@ -1,29 +1,17 @@
 function makeArray(firstArray, secondArray, maxLength) {
   const sumArr = firstArray.concat(secondArray);
-  const newArr = [];
 
-  for (let i = 0; i < maxLength; i++) {
-    const elem = sumArr[i];
-    newArr.push(elem);
+  if (maxLength >= sumArr.length) {
+    return sumArr;
   }
-  return newArr;
+
+  return sumArr.slice(0, maxLength);
 }
-
-
-
-
-
-
-
-
-
-
 
 //Функція повинна створювати новий масив, який містить усі елементи з firstArray, а потім усі елементи з secondArray.
 
 // Якщо кількість елементів у новому масиві перевищує maxLength, функція повинна повернути копію масиву з довжиною maxLength елементів.
 // В іншому випадку функція повинна повернути весь новий масив.
-
 
 // Візьми код нижче і встав після оголошення своєї функції для перевірки коректності її роботи. У консоль будуть виведені результати її роботи.
 
